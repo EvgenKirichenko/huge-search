@@ -21,12 +21,13 @@ h1, h2 {
 }
 .hs-container{
 	margin: 0 auto;
-	max-width: 1024px;
+	max-width: 1080px;
 	padding: 16px;
 }
 .hs-search-form{
 	font-size: 0;
-	margin: 16px;
+	margin: 0;
+	padding-top: 40px;
 }
 .hs-search-form>[type="search"]{
 	font-size: 95px;
@@ -46,10 +47,28 @@ h1, h2 {
 	background: none;
 	cursor: pointer;
 	background: url('../img/magnifier.svg');
+	opacity: 1;
+	-webkit-transform: scale(1,1);
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 550ms;
+	-moz-transform: scale(1,1);
+	-moz-transition-timing-function: ease-out;
+	-moz-transition-duration: 550ms;
 }
 .hs-search-form>button:hover{
-	transform: translate3d(0,-50%,0) scale(1.1);
+	-webkit-transform: scale(1.2,1.2);
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 550ms;
+	-moz-transform: scale(1.2,1.2);
+	-moz-transition-timing-function: ease-out;
+	-moz-transition-duration: 550ms;
 }
+.hs-search-form>button:active{
+	border: 0;
+	background: transparent;
+	outline: none
+}
+
 	input[type="search"] {
 	color: #ec5a62;
 }
