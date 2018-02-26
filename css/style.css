@@ -23,7 +23,6 @@ h1, h2 {
 	margin: 0 auto;
 	max-width: 1080px;
 	padding: 16px;
-	margin:0;
 }
 .hs-search-form{
 	font-size: 0;
@@ -110,7 +109,7 @@ h1, h2 {
 .hs-column-left, .hs-column-center, .hs-column-right{
 	display: inline-block;
 	vertical-align: middle;
-	margin: 0 5% 0 0;
+	margin: 30px 30px 0 0;
 	width: 30%;
 }
 .hs-column a {
